@@ -1,6 +1,6 @@
 body {
     background-image: url("background.jpg");
-    background-size: cover;
+    background-size: 100%;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     color: white;
@@ -13,7 +13,7 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
     margin-inline: auto;
-    width: 75%;
+    width: 50%;
     text-shadow: rgba(0, 0, 0, 0.5) 4px 4px 4px;
 }
 
