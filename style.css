@@ -1,0 +1,40 @@
+body {
+    background-image: url("background.jpg");
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.MainDiv {
+    padding: 16px;
+    border-radius: 16px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    margin-inline: auto;
+    width: 75%;
+}
+
+a:link {
+    color: rgb(14, 161, 14);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(14, 161, 14);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(104, 204, 104);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(104, 204, 104);
+    background-color: transparent;
+    text-decoration: underline;
+}
