@@ -20,22 +20,27 @@ a:link {
     color: rgb(14, 161, 14);
     background-color: transparent;
     text-decoration: none;
+    transition: color 0.25s ease-out;
 }
 
 a:visited {
     color: rgb(14, 161, 14);
     background-color: transparent;
     text-decoration: none;
+    transition: color 0.25s ease-out;
 }
 
 a:hover {
     color: rgb(104, 204, 104);
     background-color: transparent;
     text-decoration: underline;
+    transition: color 0.25s ease-out;
+
 }
 
 a:active {
     color: rgb(104, 204, 104);
     background-color: transparent;
     text-decoration: underline;
+    transition: color 0.25s ease-out;
 }
