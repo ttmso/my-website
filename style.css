@@ -10,6 +10,10 @@ body {
     color: white;
 }
 
+canvas {
+    border-radius: 4px;
+}
+
 .MainDiv {
     padding: 16px;
     border-radius: 16px;
