@@ -1,4 +1,5 @@
 body {
+    background-color: #272038;
     background-image: url("assets/background.jpg");
     background-size: cover;
     background-position-x: center;
@@ -12,6 +13,24 @@ body {
 
 canvas {
     border-radius: 4px;
+}
+
+textarea {
+    border-radius: 4px;
+    color: inherit;
+    background-color: black;
+}
+
+button {
+    border-radius: 4px;
+    color: inherit;
+    background-color: black;
+}
+
+input {
+    border-radius: 4px;
+    color: inherit;
+    background-color: black;
 }
 
 .MainDiv {

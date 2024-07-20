@@ -4,7 +4,3 @@ body {
     height: 100%;
     overflow-y: hidden;
 }
-
-canvas {
-    border-radius: 0px;
-}
