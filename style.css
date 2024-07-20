@@ -1,6 +1,8 @@
 body {
     background-image: url("background.jpg");
-    background-size: 100%;
+    background-size: cover;
+    background-position-x: center;
+    background-attachment: fixed;
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -15,7 +17,7 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
     margin-inline: auto;
-    width: 50%;
+    width: 60%;
     text-shadow: rgba(0, 0, 0, 0.5) 4px 4px 4px;
 }
 
