@@ -16,21 +16,36 @@ canvas {
 }
 
 textarea {
+    border: none;
+    padding: 4px;
     border-radius: 4px;
     color: inherit;
-    background-color: rgb(12, 3, 17);
+    background-color: rgb(13, 3, 19);
+    resize: none;
 }
 
 button {
+    border: none;
+    padding: 4px;
     border-radius: 4px;
     color: inherit;
-    background-color: rgb(12, 3, 17);
+    background-color: rgb(13, 3, 19);
+}
+
+button:hover {
+    background-color: rgb(19, 4, 27);
+}
+
+button:active {
+    background-color: rgb(29, 6, 41);
 }
 
 input {
+    border: none;
+    padding: 4px;
     border-radius: 4px;
     color: inherit;
-    background-color: rgb(12, 3, 17);
+    background-color: rgb(13, 3, 19);
 }
 
 .MainDiv {
