@@ -19,9 +19,10 @@
         <a>Length</a>
         <input id="min_length_input" type="number" min="1" />
         <a>to</a>
-        <input id="max_length_input" type="number" min="32" /><br>
+        <input id="max_length_input" type="number" min="50" /><br>
         <br>
         <textarea id="output_box" placeholder="Press 'Generate'" readonly></textarea><br>
+        <button type="button" onclick="navigator.clipboard.writeText(output_box.innerHTML);">Copy</button><br>
         <br>
         <a href="../">Back</a>
     </div>

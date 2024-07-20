@@ -18,19 +18,19 @@ canvas {
 textarea {
     border-radius: 4px;
     color: inherit;
-    background-color: black;
+    background-color: rgb(12, 3, 17);
 }
 
 button {
     border-radius: 4px;
     color: inherit;
-    background-color: black;
+    background-color: rgb(12, 3, 17);
 }
 
 input {
     border-radius: 4px;
     color: inherit;
-    background-color: black;
+    background-color: rgb(12, 3, 17);
 }
 
 .MainDiv {
