@@ -1,10 +1,13 @@
-console.log("Hello, World!")
+console.log("Welcome!")
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 async function screen_saver() {
+    console.log("Screen saver init")
+
+    // Find the canvas
     var c = document.getElementById("screen_saver");
     var ctx = c.getContext("2d");
 
