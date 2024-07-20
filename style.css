@@ -43,6 +43,7 @@ button:active {
 input {
     border: none;
     padding: 4px;
+    margin: 4px;
     border-radius: 4px;
     color: inherit;
     background-color: rgb(13, 3, 19);
