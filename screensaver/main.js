@@ -1,39 +1,43 @@
-console.log("Welcome!")
-
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function screen_saver() {
-    console.log("Screen saver init")
-
+async function screensaver() {
     // Find the canvas
-    var c = document.getElementById("screen_saver");
+    var c = document.getElementById("screensaver");
     var ctx = c.getContext("2d");
 
     // Canvas width and height
-    var scrw = c.clientWidth;
-    var scrh = c.clientHeight;
+    var scrw = window.innerWidth;
+    var scrh = window.innerHeight;
+    c.width = scrw;
+    c.height = scrh;
 
     // Box width and height
-    const w = 32;
-    const h = 32;
+    const w = 128;
+    const h = 128;
 
     // Box x and y
-    var x = 0;
-    var y = 0;
+    var x = Math.floor(Math.random() * ((scrw - w) + 1));
+    var y = Math.floor(Math.random() * ((scrh - h) + 1));
 
     // Box x velocity and y velocity
-    var xvel = 1;
-    var yvel = 1;
+    var xvel = Math.random() > 0.5 ? 2 : -2;
+    var yvel = Math.random() > 0.5 ? 2 : -2;
 
+    // The update loop
     while (true) {
+        scrw = window.innerWidth;
+        scrh = window.innerHeight;
+        c.width = scrw;
+        c.height = scrh;
+
         // Update
         x += xvel;
         y += yvel;
 
         // Check and resolve collisions
-        var resolves = 0
+        var resolves = 0;
         if (x < 0) {
             x = -x;
             xvel = -xvel;
@@ -56,8 +60,7 @@ async function screen_saver() {
         }
 
         if (resolves > 1) {
-            // TODO: Add celebratory animation
-            console.log("nice")
+            console.log("Nice!");
         }
 
         // Draw
@@ -67,8 +70,8 @@ async function screen_saver() {
         ctx.fillRect(x, y, w, h);
         ctx.fillStyle = "black";
         ctx.fillRect(x + 2, y + 2, w - 4, h - 4);
-        await sleep(1000 / 60);
+        await sleep(10);
     }
 }
 
-screen_saver();
+screensaver();
