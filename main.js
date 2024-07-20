@@ -65,6 +65,8 @@ async function screen_saver() {
         ctx.fillRect(0, 0, scrw, scrh);
         ctx.fillStyle = "white";
         ctx.fillRect(x, y, w, h);
+        ctx.fillStyle = "black";
+        ctx.fillRect(x + 2, y + 2, w - 4, h - 4);
         await sleep(1000 / 60);
     }
 }
