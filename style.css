@@ -3,12 +3,25 @@ body {
     background-image: url("assets/background.jpg");
     background-size: cover;
     background-position-x: center;
+    background-position-y: center;
     background-attachment: fixed;
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     color: white;
+}
+
+.MainDiv {
+    padding: 16px;
+    border-radius: 16px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    margin-inline: auto;
+    width: 65%;
+    max-width: 800px;
+    text-shadow: rgba(0, 0, 0, 0.5) 4px 4px 4px;
 }
 
 canvas {
@@ -47,17 +60,6 @@ input {
     border-radius: 4px;
     color: inherit;
     background-color: rgb(13, 3, 19);
-}
-
-.MainDiv {
-    padding: 16px;
-    border-radius: 16px;
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(5px);
-    margin-inline: auto;
-    width: 60%;
-    text-shadow: rgba(0, 0, 0, 0.5) 4px 4px 4px;
 }
 
 a:link {
