@@ -39,7 +39,11 @@ body {
     -webkit-mask:
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
+    -mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
+    -mask-composite: xor;
     mask-composite: exclude;
     z-index: -1;
 }
@@ -107,7 +111,7 @@ a:visited {
 a:hover {
     color: rgb(136, 86, 255);
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration: none;
     text-shadow: black 5px 5px 8px, rgb(136, 86, 255) 0 0 10px;
     transition: color 0.2s ease-out, text-shadow 0.2s ease-out;
 
@@ -116,7 +120,7 @@ a:hover {
 a:active {
     color: rgb(136, 86, 255);
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration: none;
     text-shadow: black 5px 5px 8px, rgb(136, 86, 255) 0 0 10px;
     transition: color 0.2s ease-out, text-shadow 0.2s ease-out;
 }
