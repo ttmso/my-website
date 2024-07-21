@@ -1,5 +1,5 @@
 body {
-    background-color: #272038;
+    background-color: #17212D;
     background-image: url("assets/background.jpg");
     background-size: cover;
     background-position-x: center;
@@ -13,15 +13,39 @@ body {
 }
 
 .MainDiv {
+    position: relative;
     padding: 16px;
     border-radius: 16px;
     text-align: left;
-    background-color: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
     margin-inline: auto;
     width: 65%;
     max-width: 800px;
     text-shadow: rgba(0, 0, 0, 0.5) 4px 4px 4px;
+    z-index: 1;
+}
+
+.MainDiv::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 16px;
+    padding: 4px;
+    background: linear-gradient(to top left, #743ad5, #d53a9d);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+h1 {
+    margin: 0;
 }
 
 canvas {
@@ -43,6 +67,10 @@ button {
     border-radius: 4px;
     color: inherit;
     background-color: rgb(13, 3, 19);
+    font-family: inherit;
+    font-optical-sizing: inherit;
+    font-weight: inherit;
+    font-style: inherit;
 }
 
 button:hover {
