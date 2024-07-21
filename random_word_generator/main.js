@@ -82,7 +82,7 @@ async function generate() {
     output_box.innerHTML = "";
     generate_button.disabled = true;
     generate_button.innerHTML = "Generateing...";
-    for (let i = 0; i < getRandomInt(min_length_input.value, max_length_input.value); i++) {
+    for (let i = 0; i < getRandomInt(+min_length_input.value, +max_length_input.value + 1); i++) {
         output_box.innerHTML += weighted_random(characters, character_weights);
         await sleep(25);
     }
@@ -95,5 +95,5 @@ var generate_button = document.getElementById("generate_button");
 var min_length_input = document.getElementById("min_length_input");
 var max_length_input = document.getElementById("max_length_input");
 
-min_length_input.value = 1
+min_length_input.value = 2
 max_length_input.value = 24
