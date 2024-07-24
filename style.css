@@ -33,7 +33,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 16px;
+  border-radius: 20px;
   background: conic-gradient(
     from var(--angle),
     #ff4545,

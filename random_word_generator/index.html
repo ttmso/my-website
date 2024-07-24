@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http`-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http`-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Random word generator</title>
-    <link rel="icon" href="../assets/icon.png">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../style.css">
-</head>
+    <link rel="icon" href="../assets/icon.png" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="MainDiv">
-        <h1>Random word generator</h1>
-        <p>A random word generator that uses a random weighted choise for every character.</p>
-        Length:
-        <input id="min_length_input" type="number" min="1" max="50" />
-        to
-        <input id="max_length_input" type="number" min="1" max="50" /><br>
-        <button id="generate_button" type="button" onclick="generate()">Generate</button><br>
-        <br>
-        <textarea id="output_box" placeholder="Press 'Generate'" readonly></textarea><br>
-        <button type="button" onclick="navigator.clipboard.writeText(output_box.innerHTML);">Copy</button><br>
-        <br>
-        <a href="../">Back</a>
+      <h1>Random word generator</h1>
+      <p>
+        A random word generator that uses a random weighted choise for every
+        character.
+      </p>
+      Length:
+      <input id="min_length_input" type="number" min="1" max="50" />
+      to
+      <input id="max_length_input" type="number" min="1" max="50" /><br />
+      <button id="generate_button" type="button" onclick="generate()">
+        Generate</button
+      ><br />
+      <br />
+      <textarea
+        id="output_box"
+        placeholder="Press 'Generate'"
+        readonly
+      ></textarea
+      ><br />
+      <button
+        type="button"
+        onclick="navigator.clipboard.writeText(output_box.innerHTML);"
+      >
+        Copy</button
+      ><br />
+      <br />
+      <a href="../">Back</a>
     </div>
 
     <script src="main.js" async defer></script>
-</body>
-
+  </body>
 </html>
