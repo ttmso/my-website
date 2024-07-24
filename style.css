@@ -1,126 +1,167 @@
 body {
-    background-color: #17212D;
-    background-image: url("assets/background.jpg");
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: center;
-    background-attachment: fixed;
-    font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    color: white;
+  background-color: #17212d;
+  background-image: url("assets/background.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  background-attachment: fixed;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+.MainDivWrapper {
+  position: relative;
+  padding: 5px;
+  margin-inline: auto;
+  width: 69%;
+  max-width: 800px;
+  z-index: 1;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.BorderDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 16px;
+  background: conic-gradient(
+    from var(--angle),
+    #ff4545,
+    #00ff99,
+    #006aff,
+    #ff0095,
+    #ff4545
+  );
+  z-index: -5 !important;
+  padding: 3px !important;
+  box-sizing: border-box;
+  animation: 2s spin linear infinite;
+}
+
+.BorderDiv2 {
+  filter: blur(1.5rem) !important;
+  z-index: -10 !important;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 16px;
+  background: conic-gradient(
+    from var(--angle),
+    #ff4545,
+    #00ff99,
+    #006aff,
+    #ff0095,
+    #ff4545
+  );
+  padding: 3px !important;
+  box-sizing: border-box;
+  animation: 2s spin linear infinite;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+
+  to {
+    --angle: 360deg;
+  }
 }
 
 .MainDiv {
-    position: relative;
-    padding: 16px;
-    border-radius: 16px;
-    text-align: left;
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(5px);
-    margin-inline: auto;
-    width: 65%;
-    max-width: 800px;
-    text-shadow: rgba(0, 0, 0, 0.5) 4px 4px 4px;
-    z-index: 1;
-}
-
-.MainDiv::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 16px;
-    padding: 4px;
-    background: linear-gradient(to top left, #743ad5, #d53a9d);
-    -webkit-mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-    -mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    -mask-composite: xor;
-    mask-composite: exclude;
-    z-index: -1;
+  position: relative;
+  padding: 16px;
+  border-radius: 16px;
+  text-align: left;
+  background-color: #1c1f2c;
+  text-shadow: rgba(0, 0, 0, 0.5) 4px 4px 4px;
 }
 
 h1 {
-    margin: 0;
+  margin: 0;
 }
 
 canvas {
-    border-radius: 4px;
+  border-radius: 4px;
 }
 
 textarea {
-    border: none;
-    padding: 4px;
-    border-radius: 4px;
-    color: inherit;
-    background-color: rgb(13, 3, 19);
-    resize: none;
+  border: none;
+  padding: 4px;
+  border-radius: 4px;
+  color: inherit;
+  background-color: rgb(13, 3, 19);
+  resize: none;
 }
 
 button {
-    border: none;
-    padding: 4px;
-    border-radius: 4px;
-    color: inherit;
-    background-color: rgb(13, 3, 19);
-    font-family: inherit;
-    font-optical-sizing: inherit;
-    font-weight: inherit;
-    font-style: inherit;
+  border: none;
+  padding: 4px;
+  border-radius: 4px;
+  color: inherit;
+  background-color: rgb(13, 3, 19);
+  font-family: inherit;
+  font-optical-sizing: inherit;
+  font-weight: inherit;
+  font-style: inherit;
 }
 
 button:hover {
-    background-color: rgb(19, 4, 27);
+  background-color: rgb(19, 4, 27);
 }
 
 button:active {
-    background-color: rgb(29, 6, 41);
+  background-color: rgb(29, 6, 41);
 }
 
 input {
-    border: none;
-    padding: 4px;
-    margin: 4px;
-    border-radius: 4px;
-    color: inherit;
-    background-color: rgb(13, 3, 19);
+  border: none;
+  padding: 4px;
+  margin: 4px;
+  border-radius: 4px;
+  color: inherit;
+  background-color: rgb(13, 3, 19);
 }
 
 a:link {
-    color: rgb(98, 30, 255);
-    background-color: transparent;
-    text-decoration: none;
-    transition: color 0.2s ease-out, text-shadow 0.2s ease-out;
+  color: rgb(98, 30, 255);
+  background-color: transparent;
+  text-decoration: none;
+  transition: color 0.2s ease-out, text-shadow 0.2s ease-out;
 }
 
 a:visited {
-    color: rgb(135, 30, 255);
-    background-color: transparent;
-    text-decoration: none;
-    transition: color 0.2s ease-out, text-shadow 0.2s ease-out;
+  color: rgb(135, 30, 255);
+  background-color: transparent;
+  text-decoration: none;
+  transition: color 0.2s ease-out, text-shadow 0.2s ease-out;
 }
 
 a:hover {
-    color: rgb(136, 86, 255);
-    background-color: transparent;
-    text-decoration: none;
-    text-shadow: black 5px 5px 8px, rgb(136, 86, 255) 0 0 10px;
-    transition: color 0.2s ease-out, text-shadow 0.2s ease-out;
-
+  color: rgb(136, 86, 255);
+  background-color: transparent;
+  text-decoration: none;
+  text-shadow: black 5px 5px 8px, rgb(136, 86, 255) 0 0 10px;
+  transition: color 0.2s ease-out, text-shadow 0.2s ease-out;
 }
 
 a:active {
-    color: rgb(136, 86, 255);
-    background-color: transparent;
-    text-decoration: none;
-    text-shadow: black 5px 5px 8px, rgb(136, 86, 255) 0 0 10px;
-    transition: color 0.2s ease-out, text-shadow 0.2s ease-out;
+  color: rgb(136, 86, 255);
+  background-color: transparent;
+  text-decoration: none;
+  text-shadow: black 5px 5px 8px, rgb(136, 86, 255) 0 0 10px;
+  transition: color 0.2s ease-out, text-shadow 0.2s ease-out;
 }
