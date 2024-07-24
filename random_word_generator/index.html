@@ -11,34 +11,38 @@
   </head>
 
   <body>
-    <div class="MainDiv">
-      <h1>Random word generator</h1>
-      <p>
-        A random word generator that uses a random weighted choise for every
-        character.
-      </p>
-      Length:
-      <input id="min_length_input" type="number" min="1" max="50" />
-      to
-      <input id="max_length_input" type="number" min="1" max="50" /><br />
-      <button id="generate_button" type="button" onclick="generate()">
-        Generate</button
-      ><br />
-      <br />
-      <textarea
-        id="output_box"
-        placeholder="Press 'Generate'"
-        readonly
-      ></textarea
-      ><br />
-      <button
-        type="button"
-        onclick="navigator.clipboard.writeText(output_box.innerHTML);"
-      >
-        Copy</button
-      ><br />
-      <br />
-      <a href="../">Back</a>
+    <div class="MainDivWrapper">
+      <div class="BorderDiv"></div>
+      <div class="BorderDiv2"></div>
+      <div class="MainDiv"
+        <h1>Random word generator</h1>
+        <p>
+          A random word generator that uses a random weighted choise for every
+          character.
+        </p>
+        Length:
+        <input id="min_length_input" type="number" min="1" max="50" />
+        to
+        <input id="max_length_input" type="number" min="1" max="50" /><br />
+        <button id="generate_button" type="button" onclick="generate()">
+          Generate</button
+        ><br />
+        <br />
+        <textarea
+          id="output_box"
+          placeholder="Press 'Generate'"
+          readonly
+        ></textarea
+        ><br />
+        <button
+          type="button"
+          onclick="navigator.clipboard.writeText(output_box.innerHTML);"
+        >
+          Copy</button
+        ><br />
+        <br />
+        <a href="../">Back</a>
+      </div>
     </div>
 
     <script src="main.js" async defer></script>
